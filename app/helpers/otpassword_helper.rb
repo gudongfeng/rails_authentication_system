@@ -1,0 +1,2 @@
+module OtpasswordHelper
+end

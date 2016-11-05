@@ -1,0 +1,24 @@
+default: &default
+  appid:  <%= Figaro.env.wechat_app_id %>
+  secret: <%= Figaro.env.wechat_secret %>
+  token:  <%= Figaro.env.wechat_token %>
+  access_token: "/var/tmp/wechat_starter_test_access_token"
+  jsapi_ticket: "/var/tmp/wechat_starter_test_jsapi_ticket"
+
+production:
+  <<: *default
+  encrypt_mode: <%= Figaro.env.wechat_encrypt_mode %>
+  encoding_aes_key: <%= Figaro.env.wechat_encoding_aes_key %>
+  trusted_domain_fullname: <%= Figaro.env.wechat_trusted_domain_fullname %>
+
+development:
+  <<: *default
+  encrypt_mode: <%= Figaro.env.wechat_encrypt_mode %>
+  encoding_aes_key: <%= Figaro.env.wechat_encoding_aes_key %>
+  trusted_domain_fullname: <%= Figaro.env.wechat_trusted_domain_fullname %>
+
+test:
+  <<: *default
+  access_token: "/tmp/wechat_starter_test_access_token"
+  jsapi_ticket: "/tmp/wechat_starter_test_jsapi_ticket"
+  trusted_domain_fullname: <%= Figaro.env.wechat_trusted_domain_fullname %>

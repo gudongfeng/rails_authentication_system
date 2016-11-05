@@ -1,0 +1,34 @@
+zh-CN:
+  home:
+    index:
+      hello: "你好世界"
+
+  # lazy lookup
+  # 可以在 app/users/users_controllers.rb 中使用
+  #   t('.success') 来显示
+  # 可以在 app/views/users/show.html.erb 中使用
+  #   <%= t '.success' %> 来显示
+  users:
+    users:
+      update:
+        fail: "发送验证码失败，请重新发送验证码"
+    otpassword:
+      form:
+        activation: "激活"
+        code: "验证码"
+      show:
+        logout: "登出"
+        resend: "重新发送验证码"
+        message: "您好，请将您手机上收到的验证码填写至下方的空白处"
+      activate:
+        fail: "激活账号失败，请重试"
+        match: "验证码错误，请重试"
+        error: "系统出错，请重新发送验证码"
+        activated: "您的账号已经激活，请返回重新登陆"
+      resend_code:
+        success: "成功发送新的验证码"
+        fail: "请重试"
+
+  jobs:
+    send_sms:
+      text: "【TalkWithSam】your verification code is %{code}"

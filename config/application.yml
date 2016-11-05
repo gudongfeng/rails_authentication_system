@@ -1,0 +1,21 @@
+##############################################################################
+# Wechat account
+##############################################################################
+
+wechat_app_id: "your-wechat-api"
+wechat_secret: "your-wechat-secret"
+wechat_token:  "your-wechat-token"
+# wechat_encrypt_mode: True
+wechat_encoding_aes_key: "E0KCyeVX5iR53FrfCFRx6xWuezLbtHFVIyiqyAiTEQW"
+wechat_trusted_domain_fullname: "http://your_dev.proxy.qqbrowser.cc"
+
+# wechat_pay_mch_id: "merchant id"
+# wechat_pay_api_key: "32 bits api key configured in pay.weixin.qq.com"
+# wechat_pay_notify_url: "url to accept pay result notification"
+
+##############################################################################
+# Yunpian account for sms sending
+##############################################################################
+
+yunpian_sms_url: http://sms.yunpian.com/v2/sms/single_send.json
+yunpian_apikey: yunpian-api

@@ -1,0 +1,7 @@
+<h2><%= t '.message' %>></h2>
+
+<%= render 'form'%>
+
+<%= link_to (t '.resend'), users_otpassword_resend_code_path, :method => :get%>
+
+<%= link_to (t '.logout'), destroy_user_session_path, :method => :delete %>

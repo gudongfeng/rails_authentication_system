@@ -13,9 +13,23 @@
 
 # Ignore all logfiles and tempfiles.
 /log/*
-/tmp/*
 !/log/.keep
-!/tmp/.keep
+/tmp
 
-# Ignore Byebug command history file.
+# Ignore application configuration
+# /config/application.yml
+
+*.sublime-workspace
+/shared
+config/menu.yaml
+
 .byebug_history
+
+.idea
+/doc
+config/settings.local.yml
+config/settings/*.local.yml
+config/environments/*.local.yml
+
+# test coverage file simplecov
+coverage

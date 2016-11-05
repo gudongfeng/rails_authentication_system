@@ -1,0 +1,10 @@
+zh-CN:
+  activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            phone:
+              number: "必须为数字"
+            country_code:
+              number: "格式必须为 +123"

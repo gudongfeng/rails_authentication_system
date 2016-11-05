@@ -1,0 +1,45 @@
+<%= form_for user do |personal_form| %>
+  <% if user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+        <% user.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="weui_cells_title">Following fields is required</div>
+  <div class="weui_cells weui_cells_form">
+    <div class="weui_cell">
+      <div class="weui_cell_hd">
+        <%= personal_form.label :country_code, class: 'weui_label' %>
+      </div>
+      <div class="weui_cell_bd weui_cell_primary">
+        <%= personal_form.text_field :country_code, class: 'weui_input'%>
+      </div>
+    </div>
+    <div class="weui_cell">
+      <div class="weui_cell_hd">
+        <%= personal_form.label :phone, class: 'weui_label' %>
+      </div>
+      <div class="weui_cell_bd weui_cell_primary">
+        <%= personal_form.telephone_field :phone, class: 'weui_input', autofocus: true%>
+      </div>
+    </div>
+    <div class="weui_cell">
+      <div class="weui_cell_hd">
+        <%= personal_form.label :email, class: 'weui_label' %>
+      </div>
+      <div class="weui_cell_bd weui_cell_primary">
+        <%= personal_form.text_field :email, class: 'weui_input' %>
+      </div>
+    </div>
+  </div>
+  <div class="weui_btn_area">
+    <%= personal_form.submit "Confirm", class: 'weui_btn weui_btn_primary' %>
+    <a href="javascript:wx.closeWindow();" class="weui_btn weui_btn_plain_default">Close</a>
+  </div>
+<% end %>

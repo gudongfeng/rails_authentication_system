@@ -1,0 +1,4 @@
+<%= form_tag users_otpassword_activate_path, method: 'post' do%>
+    <%= text_field_tag :code, (t '.code'), :required => true %>
+    <%= submit_tag t '.activation' %>
+<% end %>
