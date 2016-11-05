@@ -13,6 +13,15 @@
 - [yunpian](https://www.yunpian.com) sms sending services
 - [devise](https://github.com/plataformatec/devise) authentication system
 
+# Pictures
+
+<img src="assets/images/rails-auth.png?raw=true" width=240 />
+<img src="assets/images/rails-auth2.png?raw=true" width=240 />
+<img src="assets/images/rails-auth3.png?raw=true" width=240 />
+<img src="assets/images/rails-auth4.png?raw=true" width=240 />
+<img src="assets/images/rails-auth5.png?raw=true" width=240 />
+<img src="assets/images/text-message.png?raw=true" width=240 />
+
 # (Required) Configuration
 1. `config/application.yml`
     
